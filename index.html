@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antilope</title>
+    <!-- Remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!--------------HEADER--------------------->
+    <header class="header" id="header">
+
+        <nav class="navbar">
+
+            <a href="index.html" class="titulo">
+                <h2 class="logo">Antilope</h2>
+                <img src="" alt="" class="logotipo" width="30" height="30">
+           </a>
+
+            
+           <div class="search">
+                <form action="">
+                    <input type="text" class="form-input" placeholder="Buscar">
+                    <button class="btn form-btn" type="submit">
+                        <i class="ri-search-line"></i>
+                    </button>
+                </form>                
+            </div>
+
+
+            <div class="list-right">
+                <ul>
+                    <li><a href="" class="user">
+                        <i class="ri-user-fill"></i>
+                    </li>
+                    <li><a href="" class="compras">
+                        <i class="ri-shopping-cart-2-fill"></i>
+                    </a>
+                    </li>
+                    
+                    <li><a href="" class="notificaciones">
+                        <i class="ri-notification-fill"></i>
+                    </a>
+                    </li>
+
+                    <li><a href="" class="favoritos">
+                        <i class="ri-heart-fill"></i>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>   
+    </header>
+
+    <main class="menu-principal">
+        <div class="ofertas">
+            <h3>Ofertas</h3>
+            
+            <a href="" class="producto1">
+                <img src="data:image/jpeg;base64,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" alt="">
+                <div class="products">
+                    <h4 class="title-product">Heladera Samsung</h4>
+                    <div class="description">
+                        <h6>Lorem ipsum dolor sit amet consectetur a</h6>
+                        <span class="precio">$1500</span>
+                    </div>
+                    <div class="star">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="" class="producto2">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_787221-MLA48007684849_102021-V.jpg" alt="">
+                
+                <div class="products">
+                    <h4 class="title-product">Heladera Samsung</h4>
+                    <div class="description">
+                        <h6>Lorem ipsum dolor sit amet consectetur a</h6>
+                        <span class="precio">$1500</span>
+                    </div>
+                    <div class="star">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <aside>
+        <div class="categorias">
+            <h4>Categorias</h4>
+            <ul>
+                <li><a href="">Audio</a></li>
+                <li><a href="">Tecnología</a></li>
+                <li><a href="">Electrodomésticos</a></li>
+                <li><a href="">Hogar y Aire libre</a></li>
+                <li><a href="">Salud, Belleza y Fitness</a></li>
+            </ul>
+        </div>
+    </aside>
+    
+    
+    
+    <footer>
+        <div class="mas-info">
+            <a href="" class="terminos">
+                <h6>Terminos y condiciones</h6>
+            </a>
+            <a href="" class="ayuda">
+                <h6>Ayuda</h6>
+            </a>
+            <a href="" class="defensa">
+                <h6>Defensa del consumidor</h6>
+            </a>
+        </div>
+
+        <div>
+            <p class="copy">Copyright &#169 2022 Antílope S.A.</p>
+            <p class="ubicacion">San Vicente, CP X5871, Cordoba, Argentina</p>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+
+</html>
